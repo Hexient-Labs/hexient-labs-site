@@ -1,3 +1,3 @@
 export default () => (
-  <h1>Index</h1>
+  <h1>Partners</h1>
 );
