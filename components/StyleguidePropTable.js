@@ -21,7 +21,7 @@ const StyleguidePropTable = ({ propArray }) => (
             <td>{prop.name}</td>
             <td>{prop.type}</td>
             <td>{prop.required ? 'true' : 'false'}</td>
-            <td>{prop.default === true ? 'true' : (!prop.default ? 'false' : 'n/a')}</td>
+            <td>{prop.default === true ? 'true' : (!prop.default ? 'false' : prop.default)}</td>
             <td>{prop.desc}</td>
           </tr>
         ))

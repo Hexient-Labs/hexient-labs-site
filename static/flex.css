@@ -4,8 +4,16 @@
     flex-wrap: wrap;
 }
 
-.hl-flex > * {
-    margin-top: 20px;
+.hl-flex-column {
+    flex-direction: column;
+}
+
+.hl-flex-row {
+    flex-direction: row;
+}
+
+.hl-flex-alignItemsStart {
+    align-items: flex-start;
 }
 
 .hl-flex-alignItemsCenter {
