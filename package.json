@@ -1,0 +1,21 @@
+{
+  "name": "hexient-labs-site",
+  "version": "1.0.0",
+  "description": "Public site for Hexient Labs",
+  "main": "y",
+  "engines": {
+    "node": "8.1.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": "git@github.com:Hexient-Labs/hexient-labs-site.git",
+  "author": "Hexient Labs Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^2.4.5",
+    "react": "^15.6.1"
+  }
+}
