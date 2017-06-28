@@ -12,51 +12,49 @@ import Title from '../components/Title';
 
 
 const styleguide = () => (
-  <div>
+  <div className="container-fluid">
     <h1>This is the Hexient Labs component style guide.</h1>
     <hr />
-    <br />
 
-    <h2>Button</h2>
-    <h4>A reusable button component that takes props:</h4>
-    <table className="c-table c-table--striped">
-      <thead className="c-table__head">
-        <tr className="c-table__row c-table__row--heading">
-          <td className="c-table__cell">Name</td>
-          <td className="c-table__cell">Type</td>
-          <td className="c-table__cell">Required</td>
-          <td className="c-table__cell">Default</td>
-          <td className="c-table__cell">Description</td>
+    <h3>Button</h3>
+    <table className="table table-responsive table-striped table-bordered table-condensed">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Type</td>
+          <td>Required</td>
+          <td>Default</td>
+          <td>Description</td>
         </tr>
       </thead>
-      <tbody className="c-table__body">
-        <tr className="c-table__row">
-          <td className="c-table__cell">disabled</td>
-          <td className="c-table__cell">Boolean</td>
-          <td className="c-table__cell">false</td>
-          <td className="c-table__cell">false</td>
-          <td className="c-table__cell">Whether the button is disabled</td>
+      <tbody>
+        <tr>
+          <td>disabled</td>
+          <td>Boolean</td>
+          <td>false</td>
+          <td>false</td>
+          <td>Whether the button is disabled</td>
         </tr>
-        <tr className="c-table__row">
-          <td className="c-table__cell">loading</td>
-          <td className="c-table__cell">Boolean</td>
-          <td className="c-table__cell">false</td>
-          <td className="c-table__cell">false</td>
-          <td className="c-table__cell">Whether the button should be in 'loading' state</td>
+        <tr>
+          <td>loading</td>
+          <td>Boolean</td>
+          <td>false</td>
+          <td>false</td>
+          <td>Whether the button should be in 'loading' state</td>
         </tr>
-        <tr className="c-table__row">
-          <td className="c-table__cell">onClick</td>
-          <td className="c-table__cell">Function</td>
-          <td className="c-table__cell">true</td>
-          <td className="c-table__cell">N/A</td>
-          <td className="c-table__cell">onClick handler</td>
+        <tr>
+          <td>onClick</td>
+          <td>Function</td>
+          <td>true</td>
+          <td>N/A</td>
+          <td>onClick handler</td>
         </tr>
-        <tr className="c-table__row">
-          <td className="c-table__cell">title</td>
-          <td className="c-table__cell">String</td>
-          <td className="c-table__cell">false</td>
-          <td className="c-table__cell">'Submit'</td>
-          <td className="c-table__cell">Title of the button</td>
+        <tr>
+          <td>title</td>
+          <td>String</td>
+          <td>false</td>
+          <td>'Submit'</td>
+          <td>Title of the button</td>
         </tr>
       </tbody>
     </table>
