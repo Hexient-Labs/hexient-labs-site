@@ -15,7 +15,9 @@
   "author": "Hexient Labs Engineering",
   "license": "MIT",
   "dependencies": {
+    "blaze": "^3.2.2",
     "next": "^2.4.5",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }
