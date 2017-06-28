@@ -24,6 +24,10 @@
     justify-content: center;
 }
 
+.hl-flex-justifyContentAround {
+    justify-content: space-around;
+}
+
 .hl-flex-justifyContentBetween {
     justify-content: space-between;
 }

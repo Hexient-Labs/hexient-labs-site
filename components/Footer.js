@@ -4,16 +4,18 @@ import PropTypes from 'prop-types';
 
 
 // Component imports
+import Logo from './Logo';
 import SocialLink from './SocialLink';
 
 
 const Footer = ({ socialLinks, otherLinks }) => (
-  <div className="footer navbar-fixed-bottom">
+  <div className="footer navbar-static-bottom">
     <div className="social-links-container">
       <SocialLink link={{ href: '', icon: 'facebook-square' }} />
       <SocialLink link={{ href: '', icon: 'twitter-square' }} />
       <SocialLink link={{ href: '', icon: 'linkedin-square' }} />
     </div>
+    <Logo />
     <h5>Copyright © Hexient Labs 2017. All Rights Reserved.</h5>
     <style jsx>{`
       .footer {
@@ -23,7 +25,7 @@ const Footer = ({ socialLinks, otherLinks }) => (
         justify-content: center;
         flex: 1;
         background-color: #000000;
-        height: 140px;
+        height: 250px;
         color: #FFEB3B;
         padding: 20px;
         width: 100%;
@@ -39,40 +41,13 @@ const Footer = ({ socialLinks, otherLinks }) => (
 );
 
 
-Footer.propTypes = {
-  socialLinks: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-  })),
-  otherLinks: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  })),
-};
+Footer.propTypes = {};
 
 
-Footer.defaultProps = {
-  socialLinks: [],
-  otherLinks: [],
-};
+Footer.defaultProps = {};
 
 
-Footer.propDescription = [
-  {
-    name: 'socialLinks',
-    type: 'Array<{href: {String}, icon:{String}}>',
-    required: false,
-    default: '[]',
-    desc: 'Social links (rendered as icons)',
-  },
-  {
-    name: 'otherLinks',
-    type: 'Array<{href: {String}, title:{String}}>',
-    required: false,
-    default: '[]',
-    desc: 'Other links',
-  },
-];
+Footer.propDescription = [];
 
 
 export default Footer;

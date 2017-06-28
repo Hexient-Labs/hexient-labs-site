@@ -1,10 +1,15 @@
-import Logo from '../components/Logo';
-import Contact from '../constants/contact';
-
-export default () => (
+// Component imports
+import withStyleLib from '../hocs/withStyleLib';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import MainSection from '../components/index/MainSection'
+;
+const Index = () => (
   <div>
-    <Logo />
-    <h1>Index</h1>
-    {Contact.phoneDotted}
+    <Header/>
+    <MainSection />
+    <Footer/>
   </div>
 );
+
+export default withStyleLib(Index);
