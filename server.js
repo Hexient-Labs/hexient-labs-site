@@ -6,6 +6,17 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 const port = process.env.PORT || 3000;
 
+// START force HTTPS redirect
+app.configure('production', () => {
+  app.use((req, res, next) => {
+    if (req.header['x-forwarded-proto'] !== 'https')
+      res.redirect(`https://${req.header('host')}${req.url}`);
+    else
+      next()
+  })
+});
+// END force HTTPS redirect
+
 app.prepare()
   .then(() => {
     const server = express();
