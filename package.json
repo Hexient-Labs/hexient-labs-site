@@ -15,6 +15,7 @@
   "author": "Hexient Labs Engineering",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.15.3",
     "next": "^2.4.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
