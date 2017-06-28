@@ -1,3 +1,7 @@
+// Module imports
+import React from 'react';
+
+
 // Component imports
 import withStyleLib from '../hocs/withStyleLib';
 import Button from '../components/Button';
@@ -10,57 +14,24 @@ import Text from '../components/Text';
 import TextInput from '../components/TextInput';
 import Title from '../components/Title';
 
+// Styleguide imports
+import StyleguidePanel from '../components/StyleguidePanel';
 
 const styleguide = () => (
   <div className="container-fluid">
-    <h1>This is the Hexient Labs component style guide.</h1>
+    <Title title="Hexient Labs Style Guide" />
     <hr />
 
-    <h3>Button</h3>
-    <table className="table table-responsive table-striped table-bordered table-condensed">
-      <thead>
-        <tr>
-          <td>Name</td>
-          <td>Type</td>
-          <td>Required</td>
-          <td>Default</td>
-          <td>Description</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>disabled</td>
-          <td>Boolean</td>
-          <td>false</td>
-          <td>false</td>
-          <td>Whether the button is disabled</td>
-        </tr>
-        <tr>
-          <td>loading</td>
-          <td>Boolean</td>
-          <td>false</td>
-          <td>false</td>
-          <td>Whether the button should be in 'loading' state</td>
-        </tr>
-        <tr>
-          <td>onClick</td>
-          <td>Function</td>
-          <td>true</td>
-          <td>N/A</td>
-          <td>onClick handler</td>
-        </tr>
-        <tr>
-          <td>title</td>
-          <td>String</td>
-          <td>false</td>
-          <td>'Submit'</td>
-          <td>Title of the button</td>
-        </tr>
-      </tbody>
-    </table>
-    <Button onClick={() => {}} />
-    <hr />
-    <br />
+    {/* Button component */}
+    <StyleguidePanel
+      name="Button - Reusable button component"
+      propArray={Button.propDescription}>
+      <Button onClick={() => {}} disabled={false} loading={false} type="primary" />
+      <Button onClick={() => {}} type="info" />
+      <Button onClick={() => {}} disabled loading type="warning" size="sm" />
+      <Button onClick={() => {}} type="danger" size="lg" />
+      <Button onClick={() => {}} block={true} />
+    </StyleguidePanel>
   </div>
 );
 

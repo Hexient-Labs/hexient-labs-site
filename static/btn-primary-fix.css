@@ -1,7 +1,3 @@
-.btn-primary {
-    color: #000000;
-}
-
-.btn-primary:hover {
-    color: #000000;
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary.active {
+    color: #000000 !important;
 }
