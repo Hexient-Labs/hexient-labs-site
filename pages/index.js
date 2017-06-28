@@ -1,3 +1,10 @@
+import Logo from '../components/Logo';
+import Contact from '../constants/contact';
+
 export default () => (
-  <h1>Index</h1>
+  <div>
+    <Logo />
+    <h1>Index</h1>
+    {Contact.phoneDotted}
+  </div>
 );
