@@ -32,7 +32,8 @@ class HeaderLink extends Component {
         </Link>
         <style jsx>{`
             a {
-              font-weight: ${design.fonts.boldWeight};
+              font-weight: ${design.fonts.mediumWeight};
+              color: ${design.colors.white};
             }
           `}</style>
       </li>

@@ -1,17 +1,17 @@
 // Module imports
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Component imports
-import Logo from './Logo';
 import HeaderLink from './HeaderLink';
 
 
 // Constant imports
 import contact from '../constants/contact';
 
-const Header = () => (
+const Header = ({ opacity }) => (
   <div>
-    <nav className="navbar navbar-inverse navbar-fixed-top">
+    <nav className="navbar navbar-default navbar-fixed-top" style={{ opacity: opacity * 1.5 }}>
       <div className="container-fluid">
         <div className="navbar-header">
           <button
@@ -27,11 +27,6 @@ const Header = () => (
             <span className="icon-bar" />
             <span className="icon-bar" />
           </button>
-          <a
-            className="navbar-brand"
-            href="#">
-            HEXIENT LABS
-          </a>
         </div>
 
         <div
@@ -44,7 +39,6 @@ const Header = () => (
             <HeaderLink pathname="/web" title="Web" />
             <HeaderLink pathname="/tools" title="Tools" />
             <HeaderLink pathname="/projects" title="Projects" />
-            <HeaderLink pathname="/login" title="Login" />
             <HeaderLink pathname={`tel:${contact.phonePlain}`} title={contact.phoneDotted} />
           </ul>
         </div>
@@ -54,13 +48,23 @@ const Header = () => (
 );
 
 
-Header.propTypes = {};
+Header.propTypes = {
+  opacity: PropTypes.number.isRequired,
+};
 
 
 Header.defaultProps = {};
 
 
-Header.propDescription = [];
+Header.propDescription = [
+  {
+    name: 'opacity',
+    type: 'Number',
+    required: false,
+    default: '0',
+    desc: 'The opacity of the Header',
+  },
+];
 
 
 export default Header;
