@@ -11,7 +11,9 @@ import contact from '../constants/contact';
 
 const Header = ({ opacity }) => (
   <div>
-    <nav className="navbar navbar-default navbar-fixed-top" style={{ opacity: opacity * 1.5 }}>
+    <nav
+      className="navbar navbar-default navbar-fixed-top"
+    >
       <div className="container-fluid">
         <div className="navbar-header">
           <button

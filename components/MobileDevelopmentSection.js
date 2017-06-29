@@ -12,7 +12,7 @@ export default () => (
   <div className="section">
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-6">
-        <Title title="Mobile Development" />
+        <Title title="Focused Mobile Development" />
         <Subtitle
           subtitle="Simplicity and responsiveness are the cornerstones of a great app."
         />

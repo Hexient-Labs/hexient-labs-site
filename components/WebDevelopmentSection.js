@@ -1,6 +1,7 @@
 // Module imports
 
 // Component imports
+import FeatureList from './FeatureList';
 import Title from './Title';
 import Subtitle from './Subtitle';
 
@@ -12,28 +13,25 @@ export default () => (
   <div className="section">
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-6">
-        <Title title="A Real Partnership" />
+        <Title title="Growth-Based Web Development" />
         <Subtitle
-          subtitle="Our goal is to create long-lasting relationships that continue to deliver value over time."
+          subtitle="The web is the world's easiest platform to deliver value to customers."
         />
         <br /><br />
         <blockquote>
-          We know your work isn't done when a web or mobile app is released- neither is ours.
-          We'll <strong>design, build, test, and iterate</strong> to continuously improve your product.
-        </blockquote>
-        <blockquote>
-          Daily communication with partners assures our progress matches your vision.
+          We've built everything from logistics software to social networks. With bleeding-edge web technology
+          we're able to iterate quickly and deliver new features week-after-week.
         </blockquote>
       </div>
     </div>
     <style jsx>{`
       .section {
+        background-image: url('/static/Growth Graph.png');
         background-color: ${design.colors.white};
+        background-repeat: no-repeat;
+        background-position: right bottom;
         min-height: 65vh;
         padding-top: 56px;
-      }
-      .fa {
-        font-size: 5em;
       }
     `}</style>
   </div>

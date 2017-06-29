@@ -667,9 +667,9 @@ input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus{outlin
 output{padding-top:11px}
 .form-control{width:100%;height:46px;padding:10px 15px;background-color:#fff;border:1px solid #dce4ec;border-radius:4px;-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
 .form-control:focus{border-color:#000;outline:0}
-.form-control::-moz-placeholder{color:#acb6c0;opacity:1}
-.form-control:-ms-input-placeholder{color:#acb6c0}
-.form-control::-webkit-input-placeholder{color:#acb6c0}
+.form-control::-moz-placeholder{color:#000000;opacity:1}
+.form-control:-ms-input-placeholder{color:#000000}
+.form-control::-webkit-input-placeholder{color:#000000}
 .form-control::-ms-expand{border:0;background-color:transparent}
 .form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{background-color:#ecf0f1;opacity:1}
 .form-control[disabled],fieldset[disabled] .form-control{cursor:not-allowed}
