@@ -14,7 +14,7 @@ const LogoCard = ({ children, content, title }) => (
         {children}
         <br /><br />
         <h3 className="title">{title}</h3>
-        <br /><br />
+        <br />
         <h5 className="content">{content}</h5>
       </div>
     </div>

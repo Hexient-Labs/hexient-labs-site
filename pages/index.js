@@ -8,8 +8,10 @@ import FeatureList from '../components/FeatureList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MainSection from '../components/sections/MainSection';
+import OpenSourceToolsSection from '../components/sections/OpenSourceToolsSection';
 import PortfolioSection from '../components/sections/PortfolioSection';
 import WhatWeDoSection from '../components/sections/WhatWeDoSection';
+import WhyHexientLabsSection from '../components/sections/WhyHexientLabsSection';
 
 class Index extends Component {
   constructor(props) {
@@ -54,6 +56,8 @@ class Index extends Component {
         <MainSection />
         <WhatWeDoSection />
         <PortfolioSection />
+        <WhyHexientLabsSection />
+        <OpenSourceToolsSection />
         <FeatureList />
         <Footer/>
       </div>

@@ -10,7 +10,7 @@ import design from '../../constants/design';
 
 export default () => (
   <div className="container-fluid wrapper">
-    <SectionTitle title="Partnerships" />
+    <SectionTitle title="Projects" />
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-3">
         <PartnerView
