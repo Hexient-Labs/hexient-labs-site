@@ -8,6 +8,8 @@ import FeatureList from '../components/FeatureList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MainSection from '../components/sections/MainSection';
+import PortfolioSection from '../components/sections/PortfolioSection';
+import WhatWeDoSection from '../components/sections/WhatWeDoSection';
 
 class Index extends Component {
   constructor(props) {
@@ -50,6 +52,8 @@ class Index extends Component {
       <div>
         <Header opacity={opacity} />
         <MainSection />
+        <WhatWeDoSection />
+        <PortfolioSection />
         <FeatureList />
         <Footer/>
       </div>

@@ -19,7 +19,7 @@ export default () => (
       .wrapper {
         padding-top: 80px;
         background-image: url('../../static/background-white.png');
-        min-height: 70vh;
+        min-height: 75vh;
       }
       h3 {
         font-weight: ${design.fonts.lightWeight};
