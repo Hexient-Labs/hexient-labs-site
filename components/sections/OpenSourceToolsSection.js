@@ -14,7 +14,13 @@ export default () => (
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-4 text-center">
         <LogoCard
-          content="Automagically forward your 'Contact Us' form responses to your email. Zero coding required."
+          content={
+            <div>
+              <h5>
+                Automagically forward your 'Contact Us' form responses to your email. Zero coding required.
+              </h5>
+            </div>
+          }
           title="HenceForm"
         >
           <i className="fa fa-wpforms" />
@@ -22,7 +28,13 @@ export default () => (
       </div>
       <div className="col-md-4 text-center">
         <LogoCard
-          content="Manage your wardrobe, save your favorite outfits, and get customized shopping suggestions."
+          content={
+            <div>
+              <h5>
+                Manage your wardrobe, save your favorite outfits, and get customized shopping suggestions.
+              </h5>
+            </div>
+          }
           title="Clozette"
         >
           <i className="fa fa-suitcase" />
@@ -30,7 +42,13 @@ export default () => (
       </div>
       <div className="col-md-4 text-center">
         <LogoCard
-          content="Manage your calories without the nonsense. View historical data and track your progress toward your beach-body."
+          content={
+            <div>
+              <h5>
+                Manage your calories without the nonsense. View historical data and track your progress toward your beach-body.
+              </h5>
+            </div>
+          }
           title="Just Calories"
         >
           <i className="fa fa-cutlery" />

@@ -12,10 +12,10 @@ const LogoCard = ({ children, content, title }) => (
     <div className="container-fluid text-center">
       <div className="col-md-10 col-md-offset-1">
         {children}
-        <br /><br />
+        <br />
         <h3 className="title">{title}</h3>
         <br />
-        <h5 className="content">{content}</h5>
+        {content}
       </div>
     </div>
     <style jsx>{`
@@ -30,9 +30,6 @@ const LogoCard = ({ children, content, title }) => (
         font-weight: ${design.fonts.boldWeight};
         color: ${design.colors.primary};
       }
-      .content {
-        color: ${design.colors.gray};
-      }
     `}</style>
   </div>
 );
@@ -40,7 +37,7 @@ const LogoCard = ({ children, content, title }) => (
 
 LogoCard.propTypes = {
   children: PropTypes.element.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired,
 };
 

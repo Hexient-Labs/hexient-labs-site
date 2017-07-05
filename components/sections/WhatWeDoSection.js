@@ -13,13 +13,37 @@ export default () => (
     <SectionTitle title="What We Do" />
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-4 col-md-offset-2 text-center">
-        <LogoCard content="asdfasdfasdf" title="Design. Develop. Repeat.">
-          <i className="fa fa-mobile" />
+        <LogoCard
+          content={
+            <div>
+              <h5>
+                The cornerstones of a great app are simplicity and usefulness.
+              </h5>
+              <h5>
+                We design, build, and iterate quickly, focusing on high-value features.
+              </h5>
+            </div>
+          }
+          title="Prototype and Repeat"
+        >
+          <i className="fa fa-pencil" />
         </LogoCard>
       </div>
       <div className="col-md-4 text-center">
-        <LogoCard content="asdfasdfasdf" title="Innovate, intuitively.">
-          <i className="fa fa-desktop" />
+        <LogoCard
+          content={
+            <div>
+              <h5>
+                The cornerstones of a great app are simplicity and usefulness.
+              </h5>
+              <h5>
+                We design, build, and iterate quickly, focusing on high-value features.
+              </h5>
+            </div>
+          }
+          title="Build and Communicate"
+        >
+          <i className="fa fa-code" />
         </LogoCard>
       </div>
     </div>
