@@ -26,7 +26,7 @@ const PartnerView = ({ featureArray, logoPath, name }) => (
         color: ${design.colors.gray};
       }
       img {
-        height: 60px;
+        height: 50px;
         margin: auto;
       }
     `}</style>

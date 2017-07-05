@@ -49,12 +49,12 @@ export default () => (
       <div className="col-md-3">
         <PartnerView
           featureArray={[
-            'Image Recognition',
-            'Recommendation System',
-            'Social Sharing',
+            'P2P Marketplace',
+            'Real-Time Newsfeed',
+            'Facebook Ads Integration',
           ]}
-          logoPath={"../static/Clozette_Logo.png"}
-          name="Clozette"
+          logoPath={"../static/Taskloop_Logo.png"}
+          name="Taskloop"
         />
       </div>
     </div>
