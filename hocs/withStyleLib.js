@@ -36,6 +36,10 @@ export default BaseComponent => props => (
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
       />
+      <link
+        href="https://fonts.googleapis.com/css?family=Merriweather+Sans"
+        rel="stylesheet"
+      />
       {/* END External Stylesheets */}
 
       {/* START Custom Stylesheets */}
