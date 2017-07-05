@@ -7,17 +7,17 @@ import withStyleLib from '../hocs/withStyleLib';
 import FeatureList from '../components/FeatureList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-
+import MainSection from '../components/sections/MainSection';
 
 class Index extends Component {
   constructor(props) {
     super(props);
 
-    // this.onScroll = () => {
-    //   this.setState({
-    //       opacity: window.pageYOffset / 862,
-    //   });
-    // };
+    this.onScroll = () => {
+      this.setState({
+          opacity: window.pageYOffset / window.innerHeight,
+      });
+    };
   }
 
   state = {
@@ -37,24 +37,21 @@ class Index extends Component {
     //   blocks: [0, 0, 0, 3, 0, 3, 4],
     // });
     //
-    // window.addEventListener('scroll', this.onScroll);
+    window.addEventListener('scroll', this.onScroll);
   }
 
   componentWillUnmount() {
-    // window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('scroll', this.onScroll);
   }
 
   render() {
+    const { opacity } = this.state;
     return (
       <div>
-        <Header />
+        <Header opacity={opacity} />
+        <MainSection />
         <FeatureList />
         <Footer/>
-        <style>{`
-          body {
-            padding-top: 92px;
-          }
-        `}</style>
       </div>
     );
   }

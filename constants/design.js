@@ -7,8 +7,8 @@ export default {
   },
   fonts: {
     fontFamily: 'Merriweather Sans',
-    boldWeight: '700',
-    mediumWeight: '400',
-    lightWeight: '100',
+    boldWeight: 700,
+    mediumWeight: 400,
+    lightWeight: 100,
   },
 };

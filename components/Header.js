@@ -7,9 +7,14 @@ import PropTypes from 'prop-types';
 // Constant imports
 import design from '../constants/design';
 
-const Header = () => (
+const Header = ({ opacity }) => (
   <div>
-    <nav className="navbar navbar-default navbar-fixed-top">
+    <nav
+      className="navbar navbar-default navbar-fixed-top"
+      style={{
+        backgroundColor: `rgba(255, 255, 255, ${opacity * 10})`,
+      }}
+    >
       <div className="container">
         <div className="navbar-header">
           <button
@@ -52,11 +57,11 @@ const Header = () => (
     </nav>
     <style jsx>{`
       .img {
-        width: 120px;
+        width: 140px;
       }
       nav {
-        background-color: white;
-        min-height: 64px;
+        background-color: transparent;
+        min-height: 80px;
       }
       li a {
         font-weight: ${design.fonts.mediumWeight};
@@ -74,7 +79,9 @@ const Header = () => (
 );
 
 
-Header.propTypes = {};
+Header.propTypes = {
+  opacity: PropTypes.number.isRequired,
+};
 
 
 Header.defaultProps = {};
