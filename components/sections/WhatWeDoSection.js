@@ -17,14 +17,11 @@ export default () => (
           content={
             <div>
               <h5>
-                The cornerstones of a great app are simplicity and usefulness.
-              </h5>
-              <h5>
-                We design, build, and iterate quickly, focusing on high-value features.
+                We achieve beautiful design, emphasizing high-value features using realistic prototypes.
               </h5>
             </div>
           }
-          title="Prototype and Repeat"
+          title="Design & Prototype"
         >
           <i className="fa fa-pencil" />
         </LogoCard>
@@ -34,14 +31,11 @@ export default () => (
           content={
             <div>
               <h5>
-                The cornerstones of a great app are simplicity and usefulness.
-              </h5>
-              <h5>
-                We design, build, and iterate quickly, focusing on high-value features.
+                We build beautiful, tested, reliable apps and iterate frequently for iOS, Android, and the web.
               </h5>
             </div>
           }
-          title="Build and Communicate"
+          title="Build & Iterate"
         >
           <i className="fa fa-code" />
         </LogoCard>
@@ -56,13 +50,14 @@ export default () => (
         font-size: 8rem;
       }
       .wrapper {
-        padding-top: 80px;
-        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         background-color: ${design.colors.white};
         min-height: 70vh;
       }
-      h3 {
+      h5 {
         font-weight: ${design.fonts.lightWeight};
+        line-height: 1.75;
       }
     `}</style>
   </div>

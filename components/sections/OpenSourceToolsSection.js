@@ -64,8 +64,8 @@ export default () => (
         font-size: 8rem;
       }
       .wrapper {
-        padding-top: 80px;
-        padding-bottom: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         background-color: ${design.colors.white};
         min-height: 70vh;
       }

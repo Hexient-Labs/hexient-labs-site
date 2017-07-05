@@ -7,9 +7,12 @@ import withStyleLib from '../hocs/withStyleLib';
 import FeatureList from '../components/FeatureList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ContactUsSection from '../components/sections/ContactUsSection';
+import DevelopmentSection from '../components/sections/DevelopmentSection';
 import MainSection from '../components/sections/MainSection';
 import OpenSourceToolsSection from '../components/sections/OpenSourceToolsSection';
 import PortfolioSection from '../components/sections/PortfolioSection';
+import PrototypeSection from '../components/sections/PrototypeSection';
 import WhatWeDoSection from '../components/sections/WhatWeDoSection';
 import WhyHexientLabsSection from '../components/sections/WhyHexientLabsSection';
 
@@ -56,9 +59,12 @@ class Index extends Component {
         <MainSection />
         <WhatWeDoSection />
         <PortfolioSection />
+        <PrototypeSection />
+        <DevelopmentSection />
         <WhyHexientLabsSection />
         <OpenSourceToolsSection />
         <FeatureList />
+        <ContactUsSection />
         <Footer/>
       </div>
     );

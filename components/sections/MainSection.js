@@ -11,7 +11,7 @@ export default () => (
         <h1>Full-stack development partner</h1>
         <br />
         <h3>
-          We partner with <em>awesome</em> brands to build <em>amazing</em> apps.
+          Amazing web and mobile apps for awesome brands.
         </h3>
       </div>
     </div>

@@ -12,14 +12,12 @@ const SocialLink = ({ color, link }) => (
       href={link.href}
       target="_blank"
     >
-      <h2>
-        {color}
-        <i className={`fa fa-${link.icon}`} />
-      </h2>
+      <i className={`fa fa-${link.icon}`} />
     </a>
     <style jsx>{`
-      i {
+      .fa {
         color: ${design.colors.primary};
+        font-size: 5rem;
         margin-left: 10px;
         margin-right: 10px;
       }

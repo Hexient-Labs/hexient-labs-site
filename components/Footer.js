@@ -4,37 +4,45 @@ import PropTypes from 'prop-types';
 
 
 // Component imports
-import Logo from './Logo';
 import SocialLink from './SocialLink';
+
+
+// Constant imports
+import design from '../constants/design';
 
 
 const Footer = ({ socialLinks, otherLinks }) => (
   <div className="footer navbar-static-bottom">
-    <div className="social-links-container">
+    <div className="container-fluid text-center hl-flex hl-flex-justifyContentCenter">
       <SocialLink link={{ href: '', icon: 'facebook-square' }} />
       <SocialLink link={{ href: '', icon: 'twitter-square' }} />
       <SocialLink link={{ href: '', icon: 'linkedin-square' }} />
     </div>
-    <Logo />
-    <h5>Copyright © Hexient Labs 2017. All Rights Reserved.</h5>
+    <div className="container-fluid text-center">
+      <div className="col-md-6 col-md-offset-3">
+        <img src="../static/logo.png" alt="Hexient Labs Logo" className="img img-responsive" />
+      </div>
+    </div>
+    <div className="container-fluid text-center">
+      <div className="col-md-6 col-md-offset-3">
+        <h5>Copyright © Hexient Labs 2017. All Rights Reserved.</h5>
+      </div>
+    </div>
     <style jsx>{`
       .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        background-color: #000000;
-        height: 250px;
-        color: #FFEB3B;
-        padding: 20px;
-        width: 100%;
+        background-color: ${design.colors.lightgray};
+        padding-top: 30px;
+        padding-bottom: 30px;
       }
-      .social-links-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+      .container-fluid {
+        margin-top: 30px;
+      }
+      img {
+        height: 60px;
+        margin: auto;
+      }
+      h5 {
+        color: ${design.colors.black};
       }
     `}</style>
   </div>

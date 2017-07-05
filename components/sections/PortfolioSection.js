@@ -10,7 +10,7 @@ import design from '../../constants/design';
 
 export default () => (
   <div className="container-fluid wrapper">
-    <SectionTitle title="Projects" />
+    <SectionTitle title="Clients" />
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-3">
         <PartnerView
@@ -67,8 +67,8 @@ export default () => (
         font-size: 8rem;
       }
       .wrapper {
-        padding-top: 80px;
-        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         background-color: ${design.colors.lightgray};
         min-height: 70vh;
       }
