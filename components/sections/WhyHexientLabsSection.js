@@ -33,6 +33,9 @@ export default () => (
         background-color: ${design.colors.white};
         min-height: 70vh;
       }
+      h2 {
+        color: ${design.colors.primary};
+      }
       h3 {
         font-weight: ${design.fonts.lightWeight};
       }
