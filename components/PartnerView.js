@@ -7,20 +7,14 @@ import PropTypes from 'prop-types';
 import design from '../constants/design';
 
 
-const PartnerView = ({ featureArray, logoPath, name }) => (
+const PartnerView = ({ featureArray, logoPath }) => (
   <div className="container-fluid scroll-reveal wrapper text-center">
-    <h3>{name}</h3>
-    <br />
-    <img src={logoPath} alt={name} className="img img-responsive" />
+    <img src={logoPath} className="img img-responsive" />
     <br />
     {(() => featureArray.map(feature => <h6 key={feature}>{feature}</h6>))()}
     <style jsx>{`
       .wrapper {
         border-right: 3px solid ${design.colors.white};
-      }
-      h3 {
-        font-weight: ${design.fonts.boldWeight};
-        color: ${design.colors.primary};
       }
       h6 {
         color: ${design.colors.gray};
@@ -37,7 +31,6 @@ const PartnerView = ({ featureArray, logoPath, name }) => (
 PartnerView.propTypes = {
   featureArray: PropTypes.arrayOf(PropTypes.string).isRequired,
   logoPath: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
 };
 
 

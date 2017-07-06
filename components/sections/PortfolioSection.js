@@ -20,7 +20,6 @@ export default () => (
             'Location-Tracking',
           ]}
           logoPath={"../static/Thumbster_Logo.png"}
-          name="Thumbster"
         />
       </div>
       <div className="col-md-3">
@@ -31,7 +30,6 @@ export default () => (
             'Surge Pricing System',
           ]}
           logoPath={"../static/LoadUp_Logo.png"}
-          name="LoadUp"
         />
       </div>
       <div className="col-md-3">
@@ -43,7 +41,6 @@ export default () => (
 
           ]}
           logoPath={"../static/Emcien_Logo.png"}
-          name="Emcien"
         />
       </div>
       <div className="col-md-3">
@@ -54,7 +51,6 @@ export default () => (
             'Facebook Ads Integration',
           ]}
           logoPath={"../static/Taskloop_Logo.png"}
-          name="Taskloop"
         />
       </div>
     </div>
