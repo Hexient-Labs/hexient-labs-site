@@ -14,9 +14,24 @@ import design from '../constants/design';
 const Footer = ({ socialLinks, otherLinks }) => (
   <div className="footer navbar-static-bottom">
     <div className="container-fluid text-center hl-flex hl-flex-justifyContentCenter">
-      <SocialLink link={{ href: '', icon: 'facebook-square' }} />
-      <SocialLink link={{ href: '', icon: 'twitter-square' }} />
-      <SocialLink link={{ href: '', icon: 'linkedin-square' }} />
+      <SocialLink
+        link={{
+          href: 'https://www.facebook.com/Hexient-Labs-250421448789875/',
+          icon: 'facebook-square'
+        }}
+      />
+      <SocialLink
+        link={{
+          href: 'https://twitter.com/HexientLabs',
+          icon: 'twitter-square'
+        }}
+      />
+      <SocialLink
+        link={{
+          href: 'https://www.linkedin.com/company-beta/24771280/',
+          icon: 'linkedin-square'
+        }}
+      />
     </div>
     <div className="container-fluid text-center">
       <div className="col-md-6 col-md-offset-3">

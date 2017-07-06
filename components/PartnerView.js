@@ -8,7 +8,7 @@ import design from '../constants/design';
 
 
 const PartnerView = ({ featureArray, logoPath, name }) => (
-  <div className="container-fluid wrapper text-center">
+  <div className="container-fluid scroll-reveal wrapper text-center">
     <h3>{name}</h3>
     <br />
     <img src={logoPath} alt={name} className="img img-responsive" />

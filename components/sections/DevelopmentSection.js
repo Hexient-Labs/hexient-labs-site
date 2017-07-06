@@ -11,7 +11,7 @@ export default () => (
   <div className="container-fluid wrapper">
     <SectionTitle title="Development" />
     <div className="container-fluid margin-top-5pct">
-      <div className="col-md-6">
+      <div className="col-md-6 scroll-reveal">
         <h2 className="title">Demo-Driven Development</h2>
         <br />
         <h5>We communicate with our clients daily. You should never be surprised about the state of your app. We demo weekly to make sure our work exceeds your expectations.</h5>

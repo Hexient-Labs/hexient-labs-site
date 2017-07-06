@@ -32,18 +32,14 @@ class Index extends Component {
   };
 
   componentDidMount() {
-    // window.sr = ScrollReveal();
-    // window.sr.reveal('.title');
-    // window.sr.reveal('.subtitle');
-    // window.sr.reveal('blockquote');
-    // window.sr.reveal('#partners-content');
-    // window.sr.reveal('.btn-reveal');
-    //
-    // new Cleave('.phone-input', {
-    //   delimiters: ['+1', ' ', '(', ')',' ', '-'],
-    //   blocks: [0, 0, 0, 3, 0, 3, 4],
-    // });
-    //
+    window.sr = ScrollReveal();
+    window.sr.reveal('.scroll-reveal');
+
+    new Cleave('.phone-input', {
+      delimiters: ['+1', ' ', '(', ')',' ', '-'],
+      blocks: [0, 0, 0, 3, 0, 3, 4],
+    });
+
     window.addEventListener('scroll', this.onScroll);
   }
 

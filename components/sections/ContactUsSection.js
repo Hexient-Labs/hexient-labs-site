@@ -8,7 +8,7 @@ import SectionTitle from '../SectionTitle';
 import design from '../../constants/design';
 
 export default () => (
-  <div className="container-fluid wrapper">
+  <div id="contact-us-section" className="container-fluid wrapper">
     <SectionTitle title="Contact" />
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-6">
@@ -18,13 +18,14 @@ export default () => (
         </h5>
         <br />
         <h2><a href="tel:8556744172">(855) 674-4172</a></h2>
+        <br /><br />
       </div>
       <div className="col-md-4 col-md-offset-1 text-center">
         <input className="form-control input-lg" type="text" placeholder="Full Name" />
         <br />
         <input className="form-control input-lg" type="text" placeholder="Email" />
         <br />
-        <input className="form-control input-lg" type="text" placeholder="Phone" />
+        <input className="form-control input-lg phone-input" type="text" placeholder="Phone" />
         <br />
         <select
           className="form-control input-lg"

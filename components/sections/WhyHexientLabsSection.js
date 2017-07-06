@@ -11,7 +11,7 @@ export default () => (
   <div className="container-fluid wrapper">
     <SectionTitle title="Why Choose Us" />
     <div className="container-fluid">
-      <div className="col-md-6 col-md-offset-3 text-center">
+      <div className="col-md-6 col-md-offset-3 scroll-reveal text-center">
         <h2>A Real Partnership</h2>
         <br />
         <h4>

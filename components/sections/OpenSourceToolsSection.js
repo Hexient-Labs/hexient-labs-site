@@ -12,7 +12,7 @@ export default () => (
   <div className="container-fluid wrapper">
     <SectionTitle title="Open-Source Tools" />
     <div className="container-fluid margin-top-5pct">
-      <div className="col-md-4 text-center">
+      <div className="col-md-4 scroll-reveal text-center">
         <LogoCard
           content={
             <div>
@@ -26,7 +26,7 @@ export default () => (
           <i className="fa fa-wpforms" />
         </LogoCard>
       </div>
-      <div className="col-md-4 text-center">
+      <div className="col-md-4 scroll-reveal text-center">
         <LogoCard
           content={
             <div>
@@ -40,7 +40,7 @@ export default () => (
           <i className="fa fa-suitcase" />
         </LogoCard>
       </div>
-      <div className="col-md-4 text-center">
+      <div className="col-md-4 scroll-reveal text-center">
         <LogoCard
           content={
             <div>
