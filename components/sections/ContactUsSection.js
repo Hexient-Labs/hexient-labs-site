@@ -21,22 +21,49 @@ export default () => (
         <br /><br />
       </div>
       <div className="col-md-4 col-md-offset-1 text-center">
-        <input className="form-control input-lg" type="text" placeholder="Full Name" />
-        <br />
-        <input className="form-control input-lg" type="text" placeholder="Email" />
-        <br />
-        <input className="form-control input-lg phone-input" type="text" placeholder="Phone" />
-        <br />
-        <select
-          className="form-control input-lg"
-          placeholder="Project Type">
-          <option value="mobile_app">Mobile App (iOS and Android)</option>
-          <option value="web_app">Web App</option>
-          <option value="both">Both</option>
-          <option value="not_sure">Not Sure</option>
-        </select>
-        <br />
-        <button className="btn btn-lg btn-default btn-block">Submit</button>
+        <form
+          action="https://henceform.hexientlabs.com/mmasia@hexientlabs.com"
+          method="post"
+        >
+          <input
+            className="form-control input-lg"
+            type="text"
+            placeholder="Full Name"
+            name="full_name"
+          />
+          <br />
+          <input
+            className="form-control input-lg"
+            type="text"
+            placeholder="Email"
+            name="email"
+          />
+          <br />
+          <input
+            className="form-control input-lg phone-input"
+            type="text"
+            placeholder="Phone"
+            name="phone"
+          />
+          <br />
+          <select
+            className="form-control input-lg"
+            placeholder="Project Type"
+            name="project_type"
+          >
+            <option value="mobile_app">Mobile App (iOS and Android)</option>
+            <option value="web_app">Web App</option>
+            <option value="both">Both</option>
+            <option value="not_sure">Not Sure</option>
+          </select>
+          <br />
+          <button
+            type="submit"
+            className="btn btn-lg btn-default btn-block"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
     <style jsx>{`
