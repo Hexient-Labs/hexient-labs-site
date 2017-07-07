@@ -14,6 +14,7 @@ export default () => (
     <div className="container-fluid margin-top-5pct">
       <div className="col-md-4 scroll-reveal text-center">
         <LogoCard
+          link="/henceform"
           content={
             <div>
               <h5>

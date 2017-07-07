@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import smoothscroll from 'smoothscroll';
+import Link from 'next/link';
 
 
 // Constant imports
@@ -45,16 +46,17 @@ export default class Header extends Component {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <div
-                className="navbar-brand"
-                href="#"
+              <Link
+                href="/"
               >
-                <img
-                  src="../static/logo.png"
-                  alt="Hexient Labs"
-                  className="img img-responsive"
-                />
-              </div>
+                <div className="navbar-brand">
+                  <img
+                    src="../static/logo.png"
+                    alt="Hexient Labs"
+                    className="img img-responsive"
+                  />
+                </div>
+              </Link>
             </div>
 
             <div

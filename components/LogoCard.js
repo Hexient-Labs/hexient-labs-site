@@ -1,19 +1,35 @@
 // Module imports
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
 
 // Constant imports
 import design from '../constants/design';
 
 
-const LogoCard = ({ children, content, title }) => (
+const LogoCard = ({ children, content, link, title }) => (
   <div className="wrapper">
     <div className="container-fluid text-center">
       <div className="col-md-10 col-md-offset-1">
         {children}
         <br />
-        <h3 className="title">{title}</h3>
+        {(() => {
+          if (link) {
+            return (
+              <Link>
+                <a href={link}>
+                  <h3 className="title">{title}</h3>
+                </a>
+              </Link>
+            );
+          }
+          return (
+            <h3 className="title">
+              {title}
+            </h3>
+          );
+        })()}
         <br />
         {content}
       </div>
@@ -38,6 +54,7 @@ const LogoCard = ({ children, content, title }) => (
 LogoCard.propTypes = {
   children: PropTypes.element.isRequired,
   content: PropTypes.element.isRequired,
+  link: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
