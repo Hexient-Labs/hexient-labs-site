@@ -1,5 +1,8 @@
 // Module imports
 import React from 'react';
+import 'babel-polyfill';
+import Typist from 'react-typist';
+import TypistLoop from 'react-typist-loop';
 
 // Constant imports
 import design from '../../constants/design';
@@ -11,8 +14,35 @@ export default () => (
         <h1>Full-stack dev partner</h1>
         <br />
         <h3>
-          Amazing web and mobile apps for awesome brands.
         </h3>
+        <h2>
+          <TypistLoop
+            interval={2500}
+          >
+            {[
+              'Amazing apps for awesome brands',
+              'Helping entrepreneurs meet their goals',
+              'Turning ideas into reality',
+              'Building something from nothing',
+              'Making technology transparent',
+              'Delivering more than we promise',
+            ].map(text => (
+              <Typist
+                key={text}
+                startDelay={1000}
+                cursor={{
+                  show: true,
+                  blink: true,
+                  element: '|',
+                  hideWhenDone: false,
+                }}
+              >
+                {text}
+              </Typist>
+            ))}
+          </TypistLoop>
+
+        </h2>
       </div>
     </div>
     <style jsx>{`

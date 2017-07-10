@@ -15,11 +15,14 @@
   "author": "Hexient Labs Engineering",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "express": "^4.15.3",
     "next": "^2.4.6",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-typist": "^1.1.1",
+    "react-typist-loop": "0.0.3",
     "smoothscroll": "^0.3.0"
   }
 }
