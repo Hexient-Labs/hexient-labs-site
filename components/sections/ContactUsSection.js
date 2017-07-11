@@ -6,6 +6,7 @@ import SectionTitle from '../SectionTitle';
 
 // Constant imports
 import design from '../../constants/design';
+import contact from '../../constants/contact';
 
 export default () => (
   <div id="contact-us-section" className="container-fluid wrapper">
@@ -17,7 +18,7 @@ export default () => (
         <h5>Whether you want a prototype, MVP, or more full-featured app, you need a development team you can trust. We only hire senior engineers, and only create quality products.
         </h5>
         <br />
-        <h2><a href="tel:8556744172">(855) 674-4172</a></h2>
+        <h2><a href={`tel:${contact.phonePlain}`}>{contact.phoneHyphen}</a></h2>
         <br /><br />
       </div>
       <div className="col-md-4 col-md-offset-1 text-center">
