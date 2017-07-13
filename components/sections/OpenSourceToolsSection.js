@@ -46,7 +46,7 @@ export default () => (
           content={
             <div>
               <h5>
-                Manage your calories without the nonsense. View historical data and track your progress toward your beach-body.
+                Manage your calories without the nonsense. Track your progress toward your beach-body.
               </h5>
             </div>
           }
