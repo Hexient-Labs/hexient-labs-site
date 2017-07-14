@@ -16,19 +16,25 @@ const Footer = ({ socialLinks, otherLinks }) => (
       <SocialLink
         link={{
           href: 'https://www.facebook.com/Hexient-Labs-250421448789875/',
-          icon: 'facebook-square'
+          icon: 'facebook'
         }}
       />
       <SocialLink
         link={{
           href: 'https://twitter.com/HexientLabs',
-          icon: 'twitter-square'
+          icon: 'twitter'
         }}
       />
       <SocialLink
         link={{
           href: 'https://www.linkedin.com/company-beta/24771280/',
-          icon: 'linkedin-square'
+          icon: 'linkedin'
+        }}
+      />
+      <SocialLink
+        link={{
+          href: 'https://medium.com/hexient-labs',
+          icon: 'medium'
         }}
       />
     </div>

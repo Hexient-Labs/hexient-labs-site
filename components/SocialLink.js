@@ -17,9 +17,9 @@ const SocialLink = ({ color, link }) => (
     <style jsx>{`
       .fa {
         color: ${design.colors.primary};
-        font-size: 5rem;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 3rem;
+        margin-left: 20px;
+        margin-right: 20px;
       }
     `}</style>
   </div>
@@ -35,17 +35,6 @@ SocialLink.propTypes = {
 
 
 SocialLink.defaultProps = {};
-
-
-SocialLink.propDescription = [
-  {
-    name: 'link',
-    type: '{ href: {String}, icon: {String}, }',
-    required: true,
-    default: 'n/a',
-    desc: 'Link holding a href and icon to display',
-  },
-];
 
 
 export default SocialLink;
