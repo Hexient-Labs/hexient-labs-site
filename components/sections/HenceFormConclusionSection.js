@@ -18,7 +18,7 @@ export default () => (
         <br />
         <h4>At Hexient Labs, we love developing awesome tools, mobile apps, and web apps. If you have a project and want some guidance, we'd love to talk!</h4>
         <br />
-        <h5>Henceform is totally open-source. Check out the <a href="https://github.com/Hexient-Labs/hence-form" target="_blank">GitHub Repo</a>.</h5>
+        <h5>HenceForm is totally open-source. Check out the <a href="https://github.com/Hexient-Labs/hence-form" target="_blank">GitHub Repo</a>.</h5>
       </div>
     </div>
     <style jsx>{`

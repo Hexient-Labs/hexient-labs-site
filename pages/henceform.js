@@ -8,12 +8,12 @@ import withStyleLib from '../hocs/withStyleLib';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ContactUsSection from '../components/sections/ContactUsSection';
-import HenceformConclusionSection from '../components/sections/HenceformConclusionSection';
-import HenceformExampleSection from '../components/sections/HenceFormExampleSection';
-import HenceformMainSection from '../components/sections/HenceformMainSection';
-import HenceformWhyUseThisSection from '../components/sections/HenceformWhyUseThisSection';
+import HenceFormConclusionSection from '../components/sections/HenceFormConclusionSection';
+import HenceFormExampleSection from '../components/sections/HenceFormExampleSection';
+import HenceFormMainSection from '../components/sections/HenceFormMainSection';
+import HenceFormWhyUseThisSection from '../components/sections/HenceFormWhyUseThisSection';
 
-class Henceform extends Component {
+class HenceForm extends Component {
   constructor(props) {
     super(props);
 
@@ -46,10 +46,10 @@ class Henceform extends Component {
     return (
       <div>
         <Header opacity={opacity} />
-        <HenceformMainSection />
-        <HenceformWhyUseThisSection />
-        <HenceformExampleSection />
-        <HenceformConclusionSection />
+        <HenceFormMainSection />
+        <HenceFormWhyUseThisSection />
+        <HenceFormExampleSection />
+        <HenceFormConclusionSection />
         <ContactUsSection />
         <Footer/>
       </div>
@@ -57,4 +57,4 @@ class Henceform extends Component {
   }
 }
 
-export default withStyleLib(Henceform);
+export default withStyleLib(HenceForm);
