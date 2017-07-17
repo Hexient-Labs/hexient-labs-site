@@ -1,5 +1,6 @@
 // Component imports
 import React, { Component } from 'react';
+import trackGaView from '../lib/trackGaView';
 
 
 // Component imports
@@ -32,6 +33,8 @@ class Henceform extends Component {
     window.sr.reveal('.scroll-reveal');
 
     window.addEventListener('scroll', this.onScroll);
+
+    trackGaView();
   }
 
   componentWillUnmount() {

@@ -1,6 +1,6 @@
 // Component imports
 import React, { Component } from 'react';
-
+import trackGaView from '../lib/trackGaView';
 
 // Component imports
 import withStyleLib from '../hocs/withStyleLib';
@@ -41,6 +41,8 @@ class Index extends Component {
     });
 
     window.addEventListener('scroll', this.onScroll);
+
+    trackGaView();
   }
 
   componentWillUnmount() {
