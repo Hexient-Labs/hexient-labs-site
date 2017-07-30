@@ -5,6 +5,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    padding-top: 80px;
+}
+
 .margin-top-5pct {
     margin-top: 5%;
 }

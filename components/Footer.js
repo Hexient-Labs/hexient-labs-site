@@ -54,9 +54,6 @@ const Footer = ({ socialLinks, otherLinks }) => (
         padding-top: 30px;
         padding-bottom: 30px;
       }
-      .container-fluid {
-        margin-top: 30px;
-      }
       img {
         height: 60px;
         margin: auto;

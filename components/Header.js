@@ -23,14 +23,10 @@ export default class Header extends Component {
   }
 
   render() {
-    const { opacity } = this.props;
     return (
       <div>
         <nav
           className="navbar navbar-default navbar-fixed-top"
-          style={{
-            backgroundColor: `rgba(255, 255, 255, ${opacity * 10})`,
-          }}
         >
           <div className="container">
             <div className="navbar-header">
@@ -77,11 +73,8 @@ export default class Header extends Component {
       .img {
         width: 140px;
       }
-      .navbar-default .navbar-toggle .icon-bar {
-        background-color: black;
-      }
       nav {
-        background-color: transparent;
+        background-color: ${design.colors.white};
         min-height: 80px;
       }
       li a {
@@ -95,6 +88,9 @@ export default class Header extends Component {
         border: 2px solid black;
         margin-top: 20px;
       }
+      .navbar {
+        margin-top: 0px;
+      }
     `}</style>
       </div>
     );
@@ -102,9 +98,7 @@ export default class Header extends Component {
 };
 
 
-Header.propTypes = {
-  opacity: PropTypes.number.isRequired,
-};
+Header.propTypes = {};
 
 
 Header.defaultProps = {};
