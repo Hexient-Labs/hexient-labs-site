@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 // Component imports
 import withStyleLib from '../hocs/withStyleLib';
+import BlogSection from '../components/sections/BlogSection';
 import ClientsSection from '../components/sections/ClientsSection';
 import ExperienceSection from '../components/sections/ExperienceSection';
 import Footer from '../components/Footer';
@@ -33,6 +34,7 @@ class Index extends Component {
         <ClientsSection />
         <PrototypeSection />
         <StartupSection />
+        <BlogSection />
         <TechnologySection />
         <ExperienceSection />
         <Footer/>

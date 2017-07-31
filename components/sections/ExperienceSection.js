@@ -24,20 +24,22 @@ export default () => (
         We don't hire product managers.<br />You're working directly with developers and designers.
       </h3>
       <div className="hidden-md hidden-lg margin-top-20pct margin-bottom-20pct" />
-      <div className="col-md-2 col-md-offset-3 margin-top-5pct margin-bottom-5pct scroll-reveal text-left">
+      <div className="col-md-2 col-md-offset-3 margin-top-5pct margin-bottom-5pct scroll-reveal text-center">
         <img
           src="../../static/Riaz.png"
           alt="Riaz Virani"
           className="img img-responsive"
         />
+        <h3>Riaz Virani, CEO</h3>
       </div>
       <div className="col-md-2" />
-      <div className="col-md-2 margin-top-5pct margin-bottom-5pct scroll-reveal text-right">
+      <div className="col-md-2 margin-top-5pct margin-bottom-5pct scroll-reveal text-center">
         <img
           src="../../static/Mitch.png"
           alt="Mitch Masia"
           className="img img-responsive"
         />
+        <h3>Mitch Masia, CTO</h3>
       </div>
     </div>
     <style jsx>{`

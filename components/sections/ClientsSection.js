@@ -36,6 +36,12 @@ export default () => (
         imagePath="../../static/Taskloop-Logo.png"
       />
     </div>
+    <div className="col-md-2 text-center">
+      <Client
+        alt="Hexient Labs Steppingblocks"
+        imagePath="../../static/Steppingblocks-Logo.png"
+      />
+    </div>
     <style jsx>{`
       .container-fluid {
         background-color: ${design.colors.lightgray};
