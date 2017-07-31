@@ -4,9 +4,15 @@ import React, { Component } from 'react';
 
 // Component imports
 import withStyleLib from '../hocs/withStyleLib';
+import ClientsSection from '../components/sections/ClientsSection';
+import ExperienceSection from '../components/sections/ExperienceSection';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import PrototypeSection from '../components/sections/PrototypeSection';
+import StartupSection from '../components/sections/StartupSection';
+import TechnologySection from '../components/sections/TechnologySection';
 import TopSection from '../components/sections/TopSection';
+
 
 class Index extends Component {
   componentDidMount() {
@@ -24,6 +30,11 @@ class Index extends Component {
       <div>
         <Header />
         <TopSection />
+        <ClientsSection />
+        <PrototypeSection />
+        <StartupSection />
+        <TechnologySection />
+        <ExperienceSection />
         <Footer/>
       </div>
     );

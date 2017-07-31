@@ -2,14 +2,21 @@ h1 {
     font-family: "Arial Rounded MT Bold", Arial, sans-serif
 }
 
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 1.25;
+}
 
-h2, h3, h4, h5, h6, p, a {
+
+h3, h4, h5, h6, p, a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.25;
 }
 
 blockquote {
