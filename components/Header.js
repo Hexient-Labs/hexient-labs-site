@@ -7,21 +7,10 @@ import Link from 'next/link';
 
 // Constant imports
 import design from '../constants/design';
+import contact from '../constants/contact';
 
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-
-    this.goToContact = () => {
-      smoothscroll(this.contactUsDestination);
-    };
-  }
-
-  componentDidMount() {
-    this.contactUsDestination = document.getElementById('contact-us-section');
-  }
-
   render() {
     return (
       <div>
@@ -61,8 +50,8 @@ export default class Header extends Component {
             >
               <ul className="nav navbar-nav navbar-right">
                 <li className="header-link-bordered">
-                  <a href="#" onClick={this.goToContact}>
-                    Contact Us
+                  <a href="#">
+                    {contact.phoneHyphen}
                   </a>
                 </li>
               </ul>
@@ -78,14 +67,15 @@ export default class Header extends Component {
         min-height: 80px;
       }
       li a {
-        font-weight: ${design.fonts.mediumWeight};
+        font-weight: 400;
         color: ${design.colors.black};
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
+        font-size: 2rem;
       }
       .header-link-bordered {
-        border: 2px solid black;
+        border: 0px solid black;
         margin-top: 20px;
       }
       .navbar {

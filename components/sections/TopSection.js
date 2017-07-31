@@ -4,7 +4,7 @@ import ServiceIcon from '../ServiceIcon';
 import design from '../../constants/design';
 
 export default () => (
-  <div className="container-fluid text-center">
+  <div className="container-fluid text-center wrapper">
     <div className="margin-top-10pct" />
     <h1>
       Love your developers
@@ -29,6 +29,9 @@ export default () => (
       </div>
     </div>
     <style jsx>{`
+      .wrapper {
+        background-color: ${design.colors.white};
+      }
       #explainer {
         margin-top: 30px;
       }

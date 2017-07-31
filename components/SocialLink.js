@@ -16,7 +16,7 @@ const SocialLink = ({ color, link }) => (
     </a>
     <style jsx>{`
       .fa {
-        color: ${design.colors.primary};
+        color: ${design.colors.white};
         font-size: 3rem;
         margin-left: 20px;
         margin-right: 20px;
