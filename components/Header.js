@@ -11,6 +11,17 @@ import contact from '../constants/contact';
 
 
 export default class Header extends Component {
+  componentDidMount() {
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="bea9a72f-dbf0-4281-a9c9-966be3df7c8f";
+    (function(){
+      const d = document;
+      const s = d.createElement("script");
+      s.src="https://client.crisp.chat/l.js";
+      s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  }
   render() {
     return (
       <div>
@@ -19,18 +30,6 @@ export default class Header extends Component {
         >
           <div className="container">
             <div className="navbar-header">
-              <button
-                type="button"
-                className="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-              </button>
               <Link
                 href="/"
               >
@@ -44,10 +43,7 @@ export default class Header extends Component {
               </Link>
             </div>
 
-            <div
-              className="collapse navbar-collapse"
-              id="bs-example-navbar-collapse-1"
-            >
+            <div className="hidden-xs hidden-sm">
               <ul className="nav navbar-nav navbar-right">
                 <li className="header-link-bordered">
                   <a href="#">
