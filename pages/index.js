@@ -1,6 +1,6 @@
 // Component imports
 import React, { Component } from 'react';
-
+import trackGaView from '../lib/trackGaView';
 
 // Component imports
 import withStyleLib from '../hocs/withStyleLib';
@@ -20,10 +20,7 @@ class Index extends Component {
     window.sr = ScrollReveal();
     window.sr.reveal('.scroll-reveal');
 
-    // new Cleave('.phone-input', {
-    //   delimiters: ['+1', ' ', '(', ')',' ', '-'],
-    //   blocks: [0, 0, 0, 3, 0, 3, 4],
-    // });
+    trackGaView();
   }
 
   render() {

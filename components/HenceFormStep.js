@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 // Constant imports
 import design from '../constants/design';
 
-const HenceformStep = ({ children, description, title }) => (
+const HenceFormStep = ({ children, description, title }) => (
   <div className="wrapper scroll-reveal">
     <h2>{title}</h2>
     <br />
@@ -29,11 +29,11 @@ const HenceformStep = ({ children, description, title }) => (
 );
 
 
-HenceformStep.propTypes = {
+HenceFormStep.propTypes = {
   children: PropTypes.element,
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
 
-export default HenceformStep;
+export default HenceFormStep;
