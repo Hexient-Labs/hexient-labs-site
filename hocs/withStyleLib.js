@@ -42,6 +42,10 @@ export default BaseComponent => props => (
         href="https://fonts.googleapis.com/css?family=Merriweather+Sans"
         rel="stylesheet"
       />
+      <link
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+      />
       {/* END External Stylesheets */}
 
       {/* START Custom Stylesheets */}
@@ -51,28 +55,18 @@ export default BaseComponent => props => (
       />
       <link
         rel="stylesheet"
-        href="../static/btn-primary-fix.css"
-      />
-      <link
-        rel="stylesheet"
-        href="../static/flex.css"
-      />
-      <link
-        rel="stylesheet"
         href="../static/fonts.css"
       />
       <link
         rel="stylesheet"
-        href="../static/spacing.css"
+        href="../static/general.css"
       />
       {/* END Custom Stylesheets */}
 
       {/* START External JS Files */}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/0.7.21/cleave.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
       {/*Latest compiled and minified JavaScript */}
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
-      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
       {/* END External JS Files */}
     </Head>
     <BaseComponent {...props} />
