@@ -2,15 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ClientImage = ({ alt, src }) => (
-  <a href={alt}>
+  <a href={alt} target="_blank" rel="noopener noreferrer">
     <img
       src={src}
       alt={alt}
-      className="img-fluid"
+      className="img img-fluid"
     />
     <style jsx>{`
       img {
-        height: 150px;
+        height: 120px;
       }
     `}</style>
   </a>

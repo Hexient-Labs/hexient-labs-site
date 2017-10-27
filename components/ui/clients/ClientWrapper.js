@@ -6,8 +6,8 @@ import ClientFeatures from './ClientFeatures'
 import ClientIcon from './ClientIcon'
 
 const ClientWrapper = ({ features, imageSrc, link, technologies, title }) => (
-  <div className="text-center spacer-vertical">
-    <Row offset={1} col={10}>
+  <div className="text-center spacer-vertical client-card">
+    <Row offset={0} col={12}>
       <ClientImage
         alt={link}
         src={imageSrc}

@@ -10,7 +10,7 @@ const ClientFeatures = ({ features }) => (
 )
 
 ClientFeatures.propTypes = {
-  features: PropTypes.string.isRequired,
+  features: PropTypes.array.isRequired,
 }
 
 export default ClientFeatures
