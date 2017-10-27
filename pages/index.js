@@ -1,40 +1,51 @@
-// Component imports
-import React, { Component } from 'react';
-import trackGaView from '../lib/trackGaView';
+import React, { Component } from 'react'
+import trackGaView from '../lib/trackGaView'
+import withStyleLib from '../hocs/withStyleLib'
 
-// Component imports
-import withStyleLib from '../hocs/withStyleLib';
-import BlogSection from '../components/sections/BlogSection';
-import ClientsSection from '../components/sections/ClientsSection';
-import ExperienceSection from '../components/sections/ExperienceSection';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import PrototypeSection from '../components/sections/PrototypeSection';
-import StartupSection from '../components/sections/StartupSection';
-import TechnologySection from '../components/sections/TechnologySection';
-import TopSection from '../components/sections/TopSection';
+// Sections
+import Hero from '../components/ui/sections/Hero'
+import Prototypes from '../components/ui/sections/Prototypes'
+import Clients from '../components/ui/sections/Clients'
+import CrossPlatform from '../components/ui/sections/CrossPlatform'
+import Technologies from '../components/ui/sections/Technologies'
+import Talent from '../components/ui/sections/Talent'
 
+// Components
+import Col from '../components/ui/grid/Col'
+import Row from '../components/ui/grid/Row'
 
-class Index extends Component {
+class Rebuild extends Component {
   componentDidMount() {
-    trackGaView();
+    trackGaView()
   }
 
   render() {
     return (
       <div>
-        <Header />
-        <TopSection />
-        <ClientsSection />
-        <PrototypeSection />
-        <StartupSection />
-        <BlogSection />
-        <TechnologySection />
-        <ExperienceSection />
-        <Footer/>
+        <Hero />
+        <Prototypes />
+        <Row offset={3} col={6}>
+          <hr />
+        </Row>
+        <Clients />
+        <CrossPlatform />
+        <Technologies />
+        <Row offset={3} col={6}>
+          <hr />
+        </Row>
+        <Talent />
+        <Row offset={3} col={6}>
+          <hr />
+        </Row>
+        <Row offset={3} col={6}>
+          <Col col={10} offset={1} center>
+            <h4 className="grey text-center">Let's talk! Call us at (847) 525-2033.</h4>
+            <h6 className="text-center small">Copyright Hexient Labs, LLC. 2017</h6>
+          </Col>
+        </Row>
       </div>
     );
   }
 }
 
-export default withStyleLib(Index);
+export default withStyleLib(Rebuild)
