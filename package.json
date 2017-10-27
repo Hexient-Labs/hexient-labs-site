@@ -16,12 +16,16 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "create-component-app": "^1.1.0",
+    "devicon-react": "^1.1.1",
     "express": "^4.15.3",
     "next": "^2.4.6",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-ga": "^2.2.0",
+    "react-icons": "^2.2.7",
+    "react-svg-buttons": "^0.4.0",
     "react-typist": "^1.1.1",
     "react-typist-loop": "0.0.3",
     "smoothscroll": "^0.3.0"

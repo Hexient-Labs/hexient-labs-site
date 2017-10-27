@@ -4,6 +4,12 @@ import withStyleLib from '../hocs/withStyleLib'
 
 // Sections
 import Hero from '../components/ui/sections/Hero'
+import Prototypes from '../components/ui/sections/Prototypes'
+import Clients from '../components/ui/sections/Clients'
+import CrossPlatform from '../components/ui/sections/CrossPlatform'
+
+// Components
+import Row from '../components/ui/grid/Row'
 
 class Rebuild extends Component {
   componentDidMount() {
@@ -14,6 +20,12 @@ class Rebuild extends Component {
     return (
       <div>
         <Hero />
+        <Prototypes />
+        <Row offset={3} col={6}>
+          <hr />
+        </Row>
+        <Clients />
+        <CrossPlatform />
       </div>
     );
   }
