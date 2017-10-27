@@ -17,9 +17,6 @@ import TopSection from '../components/sections/TopSection';
 
 class Index extends Component {
   componentDidMount() {
-    window.sr = ScrollReveal();
-    window.sr.reveal('.scroll-reveal');
-
     trackGaView();
   }
 
